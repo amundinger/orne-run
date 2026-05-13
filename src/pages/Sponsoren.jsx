@@ -67,13 +67,6 @@ export default function Sponsoren() {
         </div>
       </div>
 
-      <div className="sponsor-become">
-        <div>
-          <h3>Sponsor werden</h3>
-          <p>Werden Sie Teil des Sportivo Orne Laufs und unterstützen Sie Sport und Gemeinschaft in Langenordnach. Wir freuen uns auf Ihre Anfrage.</p>
-        </div>
-        <a href="mailto:info@sportivo-ornelauf.de">Sponsorenpaket anfragen →</a>
-      </div>
     </section>
   );
 }

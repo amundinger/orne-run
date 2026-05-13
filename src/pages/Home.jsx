@@ -108,11 +108,15 @@ export default function Home({ setActiveTab }) {
       <Countdown />
 
       {/* PARTNER LOGOS */}
-      <section id="partner-logos" style={{ background: '#0f2218', padding: '2.5rem 1rem', textAlign: 'center' }}>
+c      <section id="partner-logos" style={{ background: '#0f2218', padding: '2.5rem 1rem', textAlign: 'center' }}>
         <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.78rem', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '1.5rem' }}>Veranstalter &amp; Partner</p>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '3rem', flexWrap: 'wrap' }}>
-          <img src={logoSportivo} alt="Sportivo" style={{ height: '80px', width: 'auto', objectFit: 'contain' }} />
-          <img src={logoSkiclub} alt="Skiclub Langenordnach" style={{ height: '80px', width: 'auto', objectFit: 'contain' }} />
+          <a href="https://www.sportivo-gleis1.de/" target="_blank" rel="noopener noreferrer">
+            <img src={logoSportivo} alt="Sportivo" style={{ height: '80px', width: 'auto', objectFit: 'contain' }} />
+          </a>
+          <a href="http://sc-langenordnach.de/" target="_blank" rel="noopener noreferrer">
+            <img src={logoSkiclub} alt="Skiclub Langenordnach" style={{ height: '80px', width: 'auto', objectFit: 'contain' }} />
+          </a>
           <img src={logoPhwe} alt="PHWE Cross Country Team" style={{ height: '80px', width: 'auto', objectFit: 'contain' }} />
         </div>
       </section>
