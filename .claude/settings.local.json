@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:my.raceresult.com)",
+      "WebFetch(domain:unsplash.com)",
+      "Bash(cp \"/Users/1000len-1714/.claude/projects/-Users-1000len-1714-Documents-Running-Running-Orne-Lauf-Homepage-OrnePage/6cf83fe9-ab38-4a21-9f5d-4244280b0dfb/tool-results/webfetch-1778699684430-h06tjs.bin\" \"/tmp/orne_logo.png\")",
+      "Bash(cp \"/Users/1000len-1714/.claude/projects/-Users-1000len-1714-Documents-Running-Running-Orne-Lauf-Homepage-OrnePage/6cf83fe9-ab38-4a21-9f5d-4244280b0dfb/tool-results/webfetch-1778699685124-y05ige.bin\" \"/tmp/orne_cover.png\")",
+      "Bash(cp /tmp/orne_logo.png \"/Users/1000len-1714/Documents/Running/Running/Orne Lauf/Homepage/OrnePage/src/assets/orne_logo.png\")",
+      "Bash(cp /tmp/orne_cover.png \"/Users/1000len-1714/Documents/Running/Running/Orne Lauf/Homepage/OrnePage/src/assets/orne_cover.png\")",
+      "Bash(sips *)",
+      "Bash(magick '/Users/1000len-1714/Documents/Running/Running/Orne Lauf/Homepage/OrnePage/src/assets/orne_cover.png' -crop 384x300+384+0 +repage '/Users/1000len-1714/Documents/Running/Running/Orne Lauf/Homepage/OrnePage/src/assets/logo_sportivo.png')",
+      "Bash(magick '/Users/1000len-1714/Documents/Running/Running/Orne Lauf/Homepage/OrnePage/src/assets/orne_cover.png' -crop 384x300+1152+0 +repage '/Users/1000len-1714/Documents/Running/Running/Orne Lauf/Homepage/OrnePage/src/assets/logo_skiclub.png')",
+      "Bash(magick '/Users/1000len-1714/Documents/Running/Running/Orne Lauf/Homepage/OrnePage/src/assets/orne_cover.png' -crop 384x300+1536+0 +repage '/Users/1000len-1714/Documents/Running/Running/Orne Lauf/Homepage/OrnePage/src/assets/logo_phwe.png')",
+      "Bash(sw_vers)"
+    ]
+  }
+}
