@@ -102,7 +102,7 @@ export default function Anmeldung() {
             </div>
           </div>
           <a
-            href="https://my.raceresult.com/398027/"
+            href="https://my.raceresult.com/398027/registration"
             target="_blank"
             rel="noopener noreferrer"
             className="form-submit"

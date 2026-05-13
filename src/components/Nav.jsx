@@ -29,7 +29,7 @@ export default function Nav({ activeTab, setActiveTab }) {
           <li><a onClick={() => handleTabClick('anmeldung')} className={activeTab === 'anmeldung' ? 'active' : ''} data-tab="anmeldung">Anmeldung</a></li>
           <li><a onClick={() => handleTabClick('strecken')} className={activeTab === 'strecken' ? 'active' : ''} data-tab="strecken">Strecken</a></li>
         </ul>
-        <a className="nav-cta" onClick={() => handleTabClick('anmeldung')}>Jetzt anmelden</a>
+        <a className="nav-cta" href="https://my.raceresult.com/398027/registration" target="_blank" rel="noopener noreferrer">Jetzt anmelden</a>
         <div
           className={`hamburger${mobileOpen ? ' open' : ''}`}
           id="hamburger"

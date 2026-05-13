@@ -98,7 +98,7 @@ export default function Home({ setActiveTab }) {
             </span>
           </div>
           <div className="hero-btns">
-            <a className="btn-primary" onClick={() => setActiveTab('anmeldung')}>Jetzt anmelden</a>
+            <a className="btn-primary" href="https://my.raceresult.com/398027/registration" target="_blank" rel="noopener noreferrer">Jetzt anmelden</a>
             <a className="btn-secondary" onClick={() => setActiveTab('strecken')}>Strecken entdecken</a>
           </div>
         </div>
