@@ -51,7 +51,7 @@ export default function Anmeldung() {
               </div>
               <div className="ri-text">
                 <h4>Sichere Zahlung</h4>
-                <p>Bezahlung per Kreditkarte, PayPal oder Überweisung. SSL-verschlüsselt.</p>
+                <p>Bezahlung per SEPA-Lastschrift. SSL-verschlüsselt.</p>
               </div>
             </div>
             <div className="ri">
