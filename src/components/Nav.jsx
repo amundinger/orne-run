@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import orneLogo from '../assets/orne_logo.png';
 
 export default function Nav({ activeTab, setActiveTab }) {
   const [scrolled, setScrolled] = useState(false);
@@ -21,7 +22,7 @@ export default function Nav({ activeTab, setActiveTab }) {
     <>
       <nav id="main-nav" className={scrolled ? 'scrolled' : ''}>
         <a className="nav-logo" href="#" onClick={(e) => { e.preventDefault(); handleTabClick('home'); }} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <img src="/src/assets/orne_logo.png" alt="Orne Lauf Logo" style={{ height: '38px', width: 'auto' }} />
+          <img src={orneLogo} alt="Orne Lauf Logo" style={{ height: '38px', width: 'auto' }} />
           Sportivo <span>Orne Lauf</span>
         </a>
         <ul className="nav-tabs">
