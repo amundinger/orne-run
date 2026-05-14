@@ -5,6 +5,7 @@ import Home from './pages/Home.jsx';
 import Anmeldung from './pages/Anmeldung.jsx';
 import Strecken from './pages/Strecken.jsx';
 import Sponsoren from './pages/Sponsoren.jsx';
+import Ausschreibung from './pages/Ausschreibung.jsx';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -18,8 +19,9 @@ export default function App() {
       case 'home':      return <Home setActiveTab={setActiveTab} />;
       case 'anmeldung': return <Anmeldung />;
       case 'strecken':  return <Strecken />;
-      case 'sponsoren': return <Sponsoren />;
-      default:          return <Home setActiveTab={setActiveTab} />;
+      case 'sponsoren':     return <Sponsoren />;
+      case 'ausschreibung': return <Ausschreibung />;
+      default:              return <Home setActiveTab={setActiveTab} />;
     }
   };
 
