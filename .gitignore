@@ -23,5 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# PDF files
+# PDF files (außer die Ausschreibung im public-Ordner)
 *.pdf
+!public/ausschreibung.pdf
