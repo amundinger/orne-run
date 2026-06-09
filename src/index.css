@@ -929,6 +929,6 @@ footer {
 }
 @media (max-width: 600px) {
   .detail-stats-row { grid-template-columns: 1fr 1fr; }
-  .komoot-embed-wrap iframe { height: 75vh; }
+  .komoot-embed-wrap iframe { height: 100vh; }
   .komoot-open-row { flex-direction: column; align-items: flex-start; }
 }
