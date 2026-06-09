@@ -885,8 +885,12 @@ footer {
   box-shadow: 0 12px 40px rgba(15,34,24,0.15);
   background: var(--forest);
   line-height: 0;
+  -webkit-overflow-scrolling: touch;
 }
-.komoot-embed-wrap iframe { display: block; }
+.komoot-embed-wrap iframe {
+  display: block;
+  -webkit-overflow-scrolling: touch;
+}
 
 .komoot-open-row {
   display: flex;

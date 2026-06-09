@@ -66,7 +66,6 @@ export default function StreckenDetail({ route, setActiveTab }) {
             width="100%"
             height="580"
             frameBorder="0"
-            scrolling="no"
             allowFullScreen
             title={`Strecke: ${data.title}`}
           />
