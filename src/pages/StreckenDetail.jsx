@@ -1,3 +1,5 @@
+import { useEffect, useRef } from 'react';
+
 const ROUTES = {
   '10k': {
     eyebrow: 'Streckenprofil · Hauptlauf',
@@ -29,6 +31,20 @@ const ROUTES = {
 
 export default function StreckenDetail({ route, setActiveTab }) {
   const data = ROUTES[route];
+  const iframeRef = useRef(null);
+
+  // Komoot's map initializes before the iframe has its final painted size.
+  // Setting src via JS after mount gives the browser one layout pass first,
+  // so Komoot receives correct dimensions and zooms to the route.
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (iframeRef.current) {
+        iframeRef.current.src = data.komootEmbedUrl;
+      }
+    }, 150);
+    return () => clearTimeout(timer);
+  }, [data.komootEmbedUrl]);
+
   if (!data) return null;
 
   return (
@@ -62,7 +78,7 @@ export default function StreckenDetail({ route, setActiveTab }) {
       <div className="komoot-section">
         <div className="komoot-embed-wrap">
           <iframe
-            src={data.komootEmbedUrl}
+            ref={iframeRef}
             width="100%"
             height="580"
             frameBorder="0"
