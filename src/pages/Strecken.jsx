@@ -24,7 +24,7 @@ function useFadeIn(selector) {
   }, [selector]);
 }
 
-export default function Strecken() {
+export default function Strecken({ setActiveTab }) {
   useFadeIn('.dist-card');
   useFadeIn('.rst');
 
@@ -36,7 +36,7 @@ export default function Strecken() {
         <h2 className="section-title">Unsere Distanzen</h2>
         <p className="section-lead">Drei Distanzen für alle – vom Nachwuchslauf bis zum 10-km-Hauptlauf durch das malerische Tal von Langenordnach im Schwarzwald.</p>
         <div className="dist-grid">
-          <div className="dist-card zehn">
+          <div className="dist-card zehn dist-card--link" onClick={() => setActiveTab('strecke-10k')}>
             <div className="dist-km">10<span>km</span></div>
             <div className="dist-name">Hauptlauf</div>
             <div className="dist-stats">
@@ -45,8 +45,14 @@ export default function Strecken() {
               <div className="dst"><strong>Pasta</strong>nach Ziel</div>
             </div>
             <div className="dist-price"><span className="pn">15</span>€ · Nachmeldung 18 €</div>
+            <div className="dist-route-link">
+              Strecke ansehen
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </div>
           </div>
-          <div className="dist-card halb">
+          <div className="dist-card halb dist-card--link" onClick={() => setActiveTab('strecke-1k')}>
             <div className="dist-km">1,5<span>km</span></div>
             <div className="dist-name">Schülerlauf</div>
             <div className="dist-stats">
@@ -55,6 +61,12 @@ export default function Strecken() {
               <div className="dst"><strong>Pasta</strong>nach Ziel</div>
             </div>
             <div className="dist-price"><span className="pn">6</span>€ · Nachmeldung 8 €</div>
+            <div className="dist-route-link">
+              Strecke ansehen
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </div>
           </div>
           <div className="dist-card kids">
             <div className="dist-km">350<span>m</span></div>

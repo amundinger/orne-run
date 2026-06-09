@@ -539,6 +539,23 @@ nav.scrolled { background: rgba(15,34,24,0.98); }
   cursor: default;
 }
 .dist-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(15,34,24,0.25); }
+.dist-card--link { cursor: pointer; }
+.dist-route-link {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.6rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--lake-light);
+  transition: color 0.2s, gap 0.2s;
+}
+.dist-route-link svg { width: 14px; height: 14px; flex-shrink: 0; transition: transform 0.2s; }
+.dist-card--link:hover .dist-route-link { color: white; gap: 0.65rem; }
+.dist-card--link:hover .dist-route-link svg { transform: translateX(3px); }
 .dist-card::before {
   content: '';
   position: absolute; top: 0; left: 0; right: 0; height: 4px;
@@ -783,4 +800,131 @@ footer {
   .footer-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .sponsor-become { flex-direction: column; }
+}
+
+/* ═══════════════════════════════════════
+   STRECKEN DETAIL
+═══════════════════════════════════════ */
+#strecken-detail-page {
+  padding-top: 66px;
+  min-height: 80vh;
+  background: var(--white);
+}
+
+.detail-topbar {
+  padding: 1.4rem 8vw;
+  background: var(--forest);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.detail-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  transition: color 0.2s;
+  padding: 0;
+}
+.detail-back-btn:hover { color: var(--lake-light); }
+.detail-back-btn svg { width: 16px; height: 16px; }
+
+.detail-header {
+  padding: 4rem 8vw 2.5rem;
+  background: var(--white);
+}
+
+.detail-stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: #e0e8e4;
+  border-top: 1px solid #e0e8e4;
+  border-bottom: 1px solid #e0e8e4;
+}
+.detail-stat {
+  background: var(--white);
+  padding: 1.5rem 2rem;
+}
+.detail-stat-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--lake);
+  margin-bottom: 0.3rem;
+}
+.detail-stat-val {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  color: var(--dark);
+  line-height: 1;
+}
+.detail-stat-unit {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.9rem;
+  color: #6a8070;
+  font-weight: 600;
+  margin-left: 0.25rem;
+}
+
+.komoot-section {
+  padding: 3.5rem 8vw 5rem;
+  background: var(--sky);
+}
+.komoot-embed-wrap {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(15,34,24,0.15);
+  background: var(--forest);
+  line-height: 0;
+}
+.komoot-embed-wrap iframe { display: block; }
+
+.komoot-open-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+.komoot-hint {
+  font-size: 0.88rem;
+  color: #5a7060;
+  font-style: italic;
+}
+.btn-komoot {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: var(--forest);
+  color: white;
+  padding: 0.7rem 1.6rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-komoot:hover { background: var(--pine); transform: translateY(-1px); }
+.btn-komoot svg { width: 15px; height: 15px; flex-shrink: 0; }
+
+@media (max-width: 900px) {
+  .detail-stats-row { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .detail-stats-row { grid-template-columns: 1fr 1fr; }
+  .komoot-embed-wrap iframe { height: 420px !important; }
+  .komoot-open-row { flex-direction: column; align-items: flex-start; }
 }

@@ -4,6 +4,7 @@ import Footer from './components/Footer.jsx';
 import Home from './pages/Home.jsx';
 import Anmeldung from './pages/Anmeldung.jsx';
 import Strecken from './pages/Strecken.jsx';
+import StreckenDetail from './pages/StreckenDetail.jsx';
 import Sponsoren from './pages/Sponsoren.jsx';
 import Ausschreibung from './pages/Ausschreibung.jsx';
 
@@ -16,9 +17,11 @@ export default function App() {
 
   const renderPage = () => {
     switch (activeTab) {
-      case 'home':      return <Home setActiveTab={setActiveTab} />;
-      case 'anmeldung': return <Anmeldung />;
-      case 'strecken':  return <Strecken />;
+      case 'home':         return <Home setActiveTab={setActiveTab} />;
+      case 'anmeldung':    return <Anmeldung />;
+      case 'strecken':     return <Strecken setActiveTab={setActiveTab} />;
+      case 'strecke-10k':  return <StreckenDetail route="10k" setActiveTab={setActiveTab} />;
+      case 'strecke-1k':   return <StreckenDetail route="1k" setActiveTab={setActiveTab} />;
       case 'sponsoren':     return <Sponsoren />;
       case 'ausschreibung': return <Ausschreibung />;
       default:              return <Home setActiveTab={setActiveTab} />;

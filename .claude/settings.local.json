@@ -21,7 +21,12 @@
       "Bash(npm install *)",
       "Bash(git rm *)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(git config *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:5173/)",
+      "Bash(npx playwright *)",
+      "Bash(node test_strecken.mjs)"
     ]
   }
 }
