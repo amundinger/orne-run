@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import logoSportivo from '../assets/logo_sportivo.png';
 import logoSkiclub from '../assets/logo_skiclub.png';
 import logoPhwe from '../assets/logo_phwe.png';
+import logoCuore from '../assets/logo_cuore.svg';
 
 function Countdown() {
   const raceDate = new Date('2026-07-04T17:30:00');
@@ -108,7 +109,7 @@ export default function Home({ setActiveTab }) {
       <Countdown />
 
       {/* PARTNER LOGOS */}
-c      <section id="partner-logos" style={{ background: '#0f2218', padding: '2.5rem 1rem', textAlign: 'center' }}>
+      <section id="partner-logos" style={{ background: '#0f2218', padding: '2.5rem 1rem', textAlign: 'center' }}>
         <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.78rem', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '1.5rem' }}>Veranstalter &amp; Partner</p>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '3rem', flexWrap: 'wrap' }}>
           <a href="https://www.sportivo-gleis1.de/" target="_blank" rel="noopener noreferrer">
@@ -118,6 +119,11 @@ c      <section id="partner-logos" style={{ background: '#0f2218', padding: '2.5
             <img src={logoSkiclub} alt="Skiclub Langenordnach" style={{ height: '80px', width: 'auto', objectFit: 'contain' }} />
           </a>
           <img src={logoPhwe} alt="PHWE Cross Country Team" style={{ height: '80px', width: 'auto', objectFit: 'contain' }} />
+          <a href="https://eu.cuore.ch/" target="_blank" rel="noopener noreferrer">
+            <div style={{ background: '#000', borderRadius: '6px', height: '80px', width: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '10px' }}>
+              <img src={logoCuore} alt="Cuore of Switzerland" style={{ width: '100%', height: 'auto' }} />
+            </div>
+          </a>
         </div>
       </section>
 

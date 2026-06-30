@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import orneLogo from '../assets/orne_logo.png';
 import orneCover from '../assets/orne_cover.png';
+import cuoreLogo from '../assets/logo_cuore.svg';
 
 function useFadeIn(selector) {
   useEffect(() => {
@@ -61,9 +62,14 @@ export default function Sponsoren() {
             <span style={{ display: 'block', fontSize: '0.78rem', color: '#888', marginTop: '0.3rem' }}>Fitness · Gesundheit · Therapie</span>
           </div>
           <div className="sponsor-card silver">
-            <span className="sn">PHWE SC TEAM</span>
+            <span className="sn">PHWE XC TEAM</span>
             <span style={{ display: 'block', fontSize: '0.78rem', color: '#888', marginTop: '0.3rem' }}>Party Hard Win Easy · Cross Country Team</span>
           </div>
+          <a href="https://eu.cuore.ch/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+            <div className="sponsor-card silver" style={{ backgroundColor: '#000' }}>
+              <img src={cuoreLogo} alt="Cuore of Switzerland" style={{ maxWidth: '75%', height: 'auto' }} />
+            </div>
+          </a>
         </div>
       </div>
 
