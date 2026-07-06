@@ -30,7 +30,24 @@
       "Skill(run)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173/)",
       "Bash(open *)",
-      "Bash(curl -s http://localhost:5173/src/assets/logo_cuore.svg)"
+      "Bash(curl -s http://localhost:5173/src/assets/logo_cuore.svg)",
+      "Bash(npx vite *)",
+      "WebFetch(domain:www.mein-freiburgmarathon.de)",
+      "Bash(curl *)",
+      "Bash(timeout 20 bash -c 'until curl -sf http://localhost:5174 >/dev/null; do sleep 0.5; done')",
+      "Bash(chromium-cli *)",
+      "Bash(node \"/private/tmp/claude-501/-Users-1000len-1714-Documents-Running-Running-Orne-Lauf-Homepage-orne-run/9690433d-cf93-459d-a988-afb3ddfa0600/scratchpad/drive.mjs\")",
+      "Bash(npm init *)",
+      "Bash(node drive.mjs)",
+      "Bash(node drive2.mjs)",
+      "Bash(sed 's/localhost:5174/127.0.0.1:5174/' drive2.mjs)",
+      "Bash(node drive3.mjs)",
+      "Bash(lsof -iTCP -sTCP:LISTEN -P)",
+      "Bash(sed 's/localhost:5174/[::1]:5174/' drive2.mjs)",
+      "Bash(node drive4.mjs)",
+      "Bash(pkill -f \"vite\")",
+      "Bash(timeout 20 bash -c 'until curl -sf http://localhost:5173 >/dev/null; do sleep 0.5; done')",
+      "Bash(node drive_debug.mjs)"
     ]
   }
 }

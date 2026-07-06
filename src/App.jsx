@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import Nav from './components/Nav.jsx';
 import Footer from './components/Footer.jsx';
 import Home from './pages/Home.jsx';
-import Anmeldung from './pages/Anmeldung.jsx';
 import Strecken from './pages/Strecken.jsx';
 import StreckenDetail from './pages/StreckenDetail.jsx';
 import Sponsoren from './pages/Sponsoren.jsx';
@@ -18,7 +17,6 @@ export default function App() {
   const renderPage = () => {
     switch (activeTab) {
       case 'home':         return <Home setActiveTab={setActiveTab} />;
-      case 'anmeldung':    return <Anmeldung />;
       case 'strecken':     return <Strecken setActiveTab={setActiveTab} />;
       case 'strecke-10k':  return <StreckenDetail route="10k" setActiveTab={setActiveTab} />;
       case 'strecke-1k':   return <StreckenDetail route="1k" setActiveTab={setActiveTab} />;

@@ -27,11 +27,10 @@ export default function Nav({ activeTab, setActiveTab }) {
         </a>
         <ul className="nav-tabs">
           <li><a onClick={() => handleTabClick('home')} className={activeTab === 'home' ? 'active' : ''} data-tab="home">Home</a></li>
-          <li><a onClick={() => handleTabClick('anmeldung')} className={activeTab === 'anmeldung' ? 'active' : ''} data-tab="anmeldung">Anmeldung</a></li>
           <li><a onClick={() => handleTabClick('strecken')} className={activeTab === 'strecken' ? 'active' : ''} data-tab="strecken">Strecken</a></li>
           <li><a onClick={() => handleTabClick('ausschreibung')} className={activeTab === 'ausschreibung' ? 'active' : ''} data-tab="ausschreibung">Ausschreibung</a></li>
         </ul>
-        <a className="nav-cta" href="https://my.raceresult.com/398027/registration" target="_blank" rel="noopener noreferrer">Jetzt anmelden</a>
+        <a className="nav-cta" href="https://my.raceresult.com/398027/results" target="_blank" rel="noopener noreferrer">Ergebnisse</a>
         <div
           className={`hamburger${mobileOpen ? ' open' : ''}`}
           id="hamburger"
@@ -43,7 +42,6 @@ export default function Nav({ activeTab, setActiveTab }) {
 
       <div className={`mobile-menu${mobileOpen ? ' open' : ''}`} id="mobile-menu">
         <a onClick={() => handleTabClick('home')}>Home</a>
-        <a onClick={() => handleTabClick('anmeldung')}>Anmeldung</a>
         <a onClick={() => handleTabClick('strecken')}>Strecken</a>
         <a onClick={() => handleTabClick('ausschreibung')}>Ausschreibung</a>
       </div>
