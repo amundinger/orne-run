@@ -26,3 +26,10 @@ dist-ssr
 # PDF files (außer die Ausschreibung im public-Ordner)
 *.pdf
 !public/ausschreibung.pdf
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
