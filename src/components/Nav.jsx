@@ -29,6 +29,7 @@ export default function Nav({ activeTab, setActiveTab }) {
           <li><a onClick={() => handleTabClick('home')} className={activeTab === 'home' ? 'active' : ''} data-tab="home">Home</a></li>
           <li><a onClick={() => handleTabClick('strecken')} className={activeTab === 'strecken' ? 'active' : ''} data-tab="strecken">Strecken</a></li>
           <li><a onClick={() => handleTabClick('ausschreibung')} className={activeTab === 'ausschreibung' ? 'active' : ''} data-tab="ausschreibung">Ausschreibung</a></li>
+          <li><a onClick={() => handleTabClick('fotos')} className={activeTab === 'fotos' ? 'active' : ''} data-tab="fotos">Fotos</a></li>
         </ul>
         <a className="nav-cta" href="https://my.raceresult.com/398027/results" target="_blank" rel="noopener noreferrer">Ergebnisse</a>
         <div
@@ -44,6 +45,7 @@ export default function Nav({ activeTab, setActiveTab }) {
         <a onClick={() => handleTabClick('home')}>Home</a>
         <a onClick={() => handleTabClick('strecken')}>Strecken</a>
         <a onClick={() => handleTabClick('ausschreibung')}>Ausschreibung</a>
+        <a onClick={() => handleTabClick('fotos')}>Fotos</a>
       </div>
     </>
   );

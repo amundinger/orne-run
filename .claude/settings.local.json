@@ -47,7 +47,9 @@
       "Bash(node drive4.mjs)",
       "Bash(pkill -f \"vite\")",
       "Bash(timeout 20 bash -c 'until curl -sf http://localhost:5173 >/dev/null; do sleep 0.5; done')",
-      "Bash(node drive_debug.mjs)"
+      "Bash(node drive_debug.mjs)",
+      "Bash(pkill -f \"vite --port 5183\")",
+      "Bash(rm -rf dist node_modules/.vite)"
     ]
   }
 }

@@ -6,6 +6,7 @@ import Strecken from './pages/Strecken.jsx';
 import StreckenDetail from './pages/StreckenDetail.jsx';
 import Sponsoren from './pages/Sponsoren.jsx';
 import Ausschreibung from './pages/Ausschreibung.jsx';
+import Fotos from './pages/Fotos.jsx';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -22,6 +23,7 @@ export default function App() {
       case 'strecke-1k':   return <StreckenDetail route="1k" setActiveTab={setActiveTab} />;
       case 'sponsoren':     return <Sponsoren />;
       case 'ausschreibung': return <Ausschreibung />;
+      case 'fotos':         return <Fotos />;
       default:              return <Home setActiveTab={setActiveTab} />;
     }
   };
